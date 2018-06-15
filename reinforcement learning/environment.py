@@ -309,6 +309,9 @@ class maze():
     def getNActions(self):
         return len(self.actions)
 
+    def changeEnv(self):
+        self.maze[3][0]=1
+
     #return the number of blocks in the maze
     def getNStates(self):
         return self.maze.shape[0] * self.maze.shape[1]
